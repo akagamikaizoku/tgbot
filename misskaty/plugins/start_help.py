@@ -74,7 +74,7 @@ async def start(_, ctx: Message, strings):
         nama = ctx.from_user.mention if ctx.from_user else ctx.sender_chat.title
         try:
             return await ctx.reply_photo(
-                photo="https://img.yasirweb.eu.org/file/90e9a448bc2f8b055b762.jpg",
+                photo="https://te.legra.ph/file/cce36b2aadb553307d312.jpg",
                 caption=strings("start_msg").format(kamuh=nama),
                 reply_markup=keyboard,
             )
