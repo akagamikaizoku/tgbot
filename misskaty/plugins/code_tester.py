@@ -50,7 +50,7 @@ List of Supported Programming Languages:
 ~> typescript
 
 **Example:**
-~> `!python print("Hai aku MissKatyRoBot")`
+~> `!python print("Hi, I'm Esdeath!")`
 """
 
 
