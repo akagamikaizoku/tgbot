@@ -45,7 +45,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
     ]
 )
 
-home_text_pm = f"Hey there! My name is Esdeath. I have many useful features for you, feel free to add me to your group.\n\nIf you want give coffee to my owner you can send /donate command for more info."
+home_text_pm = f"Hey there! My name is Esdeath. I have many useful features for you, feel free to add me to your group.\n\nIf you want give coffee to my owner you can send me message for more info."
 
 keyboard = InlineKeyboardMarkup(
     [
@@ -97,7 +97,7 @@ async def start(_, ctx: Message, strings):
             )
     else:
         await ctx.reply_photo(
-            photo="https://img.yasirweb.eu.org/file/90e9a448bc2f8b055b762.jpg",
+            photo="https://te.legra.ph/file/cce36b2aadb553307d312.jpg",
             caption=home_text_pm,
             reply_markup=home_keyboard_pm,
         )
@@ -175,10 +175,10 @@ async def help_parser(name, keyb=None):
 I'm a bot with some useful features. You can change language bot using /setlang command, but it's still in beta stage.
 You can choose an option below, by clicking a button.
 
-If you want give coffee to my owner you can send /donate command for more info.
+If you want give coffee to my owner you can send message for more info.
 """.format(
             first_name=name,
-            bot_name="MissKaty",
+            bot_name="Esdeath",
         ),
         keyb,
     )
