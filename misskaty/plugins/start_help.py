@@ -45,7 +45,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
     ]
 )
 
-home_text_pm = f"Hey there! My name is Esdeath. I have many useful features for you, feel free to add me to your group.\n\nIf you want give coffee to my owner you can send me message for more info."
+home_text_pm = f"Hey there! My name is Esdeath. I have many useful features for you, feel free to add me to your group.\n\nIf you want give coffee to my owner then please contact him by writing /start command and click on Dev."
 
 keyboard = InlineKeyboardMarkup(
     [
@@ -175,7 +175,7 @@ async def help_parser(name, keyb=None):
 I'm a bot with some useful features. You can change language bot using /setlang command, but it's still in beta stage.
 You can choose an option below, by clicking a button.
 
-If you want give coffee to my owner you can send message for more info.
+If you want give coffee to my owner then please contact him by writing /start command and click on Dev.
 """.format(
             first_name=name,
             bot_name="Esdeath",
