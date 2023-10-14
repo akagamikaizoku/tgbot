@@ -13,25 +13,25 @@ LOGGER = getLogger("MissKaty")
 dotenv.load_dotenv("config.env", override=True)
 
 # Required ENV
-API_ID = environ.get("API_ID", "")
+API_ID = environ.get("API_ID", "29722120")
 if not API_ID:
     LOGGER.error("API_ID variable is missing! Exiting now")
     sys.exit(1)
 else:
     API_ID = int(API_ID)
-API_HASH = environ.get("API_HASH", "")
+API_HASH = environ.get("API_HASH", "91f3bf8651edfa748856cfcad07f55bb")
 if not API_HASH:
     LOGGER.error("API_HASH variable is missing! Exiting now")
     sys.exit(1)
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+BOT_TOKEN = environ.get("BOT_TOKEN", "6663040181:AAEdRPMg1h8CaImyX5Wf8ERWNdUg8y97S-k")
 if not BOT_TOKEN:
     LOGGER.error("BOT_TOKEN variable is missing! Exiting now")
     sys.exit(1)
-DATABASE_URI = environ.get("DATABASE_URI", "")
+DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://helloyeager8:dSaini9485@cluster0.bhqp2fq.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp")
 if not DATABASE_URI:
     LOGGER.error("DATABASE_URI variable is missing! Exiting now")
     sys.exit(1)
-LOG_CHANNEL = environ.get("LOG_CHANNEL", "")
+LOG_CHANNEL = environ.get("LOG_CHANNEL", "-1001829052958")
 if not LOG_CHANNEL:
     LOGGER.error("LOG_CHANNEL variable is missing! Exiting now")
     sys.exit(1)
@@ -41,14 +41,10 @@ else:
 # Optional ENV
 USER_SESSION = environ.get("USER_SESSION")
 DATABASE_NAME = environ.get("DATABASE_NAME", "MissKatyDB")
-TZ = environ.get("TZ", "Asia/Jakarta")
-COMMAND_HANDLER = environ.get("COMMAND_HANDLER", "! /").split()
-SUDO = list(
-    {
-        int(x)
+TZ = environ.get("TZ", "Asia/Kolkata")
         for x in environ.get(
             "SUDO",
-            "617426792 2024984460",
+            "1983471689",
         ).split()
     }
 )
